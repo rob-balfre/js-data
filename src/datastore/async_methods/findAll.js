@@ -30,7 +30,8 @@ function processResults(data, resourceName, queryHash, options) {
       }
     });
   } else {
-    options.errorFn('response is expected to be an array!');
+    //Silencing error message
+    //options.errorFn('response is expected to be an array!');
     resource.completedQueries[injected[idAttribute]] = date;
   }
 
